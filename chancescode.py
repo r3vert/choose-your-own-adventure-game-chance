@@ -58,7 +58,7 @@ if do == 'west':
 if do == 'east':
   print('ok then')
 
-print('whedo re you whant to go east, west, north, or south.'  ) = input()
+print('whedo re you whant to go east, west, north, or south.'  )
 if do == 'north' :
   print('ok then')
 
