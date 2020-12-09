@@ -1,4 +1,3 @@
-#
 from time import sleep
 from os import system, name 
 #get persons name
