@@ -3,25 +3,26 @@ from os import system, name
 import sys
 goOn = True
 
+
 #this keeps ther game running
 while goOn == True:
 
    #get persons name
-  pname = input('What is your name?\n')
-  print('Hi, %s.' % pname)
+    pname = input('What is your name?\n')
+    print('Hi, %s.' % pname)
 
-  # sleep command waits for a amount of seconds for it to print the next line of text
-  sleep(0.9)
+    # sleep command waits for a amount of seconds for it to print the next line of text
+    sleep(0.9)
 
-  print('I am a bot with self conscience, %s ' % pname)
-  print('Im going to tell you a story')
-  #get caracters name
-  cname = input('What is your player name going to be.  \b')
-  print('I shall call you %s for now on' % cname)
-  print('Let the story begin')
-  sleep(0.9)
+    print('I am a bot with self conscience, %s ' % pname)
+    print('Im going to tell you a story')
+    #get caracters name
+    cname = input('What is your player name going to be.  \b')
+    print('I shall call you %s for now on' % cname)
+    print('Let the story begin')
+    sleep(3.0)
 
-  #this will delete all previous text so it does not clutter the screen
+    #this will delete all previous text so it does not clutter the screen
 
   # for windows
   if name == 'nt':
@@ -38,5 +39,8 @@ while goOn == True:
   if do == 'north':
     print(
       "As you walk down the hall you meet a large mutated rat. it eats you and you die horribly")
-  print('YOU FAILED ')
-  sys.exit(1)
+      print('YOU FAILED ')
+      sys.exit()
+
+  if do == 'south':
+    print ('ok')
