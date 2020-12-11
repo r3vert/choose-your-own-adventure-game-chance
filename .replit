@@ -1,0 +1,3 @@
+run="python3 extras/testrandom.py"
+language="python3"
+
