@@ -5,8 +5,6 @@ from random import randint
 goOn = True
 one = 1
 value = randint(1, 2)
-#this keeps ther game running
-
 
 #get persons name
 pname = input('What is your name?\n')
