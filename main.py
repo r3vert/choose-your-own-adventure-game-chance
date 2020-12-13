@@ -5,11 +5,10 @@ from random import randint
 goOn = True
 one = 1
 value = randint(1, 2)
-
 #get persons name
 pname = input('What is your name?\n')
 print('Hi, %s.' % pname)
-
+from system import my_function
 # sleep command waits for a amount of seconds for it to print the next line of text
 sleep(0.9)
 
