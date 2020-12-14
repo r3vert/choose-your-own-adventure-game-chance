@@ -1,4 +1,5 @@
 from time import sleep
+from system import encounter
 from os import system, name
 import sys
 from random import randint
@@ -6,9 +7,9 @@ goOn = True
 one = 1
 value = randint(1, 2)
 #get persons name
+
 pname = input('What is your name?\n')
 print('Hi, %s.' % pname)
-from system import my_function
 # sleep command waits for a amount of seconds for it to print the next line of text
 sleep(0.9)
 
@@ -35,14 +36,9 @@ print('I hope you like it there, %s' % cname)
 print('where do you want to go east, west, north, or south.')
 do = input()
 if do == 'north':
-  if value == one:
-    print("As you walk down the hall you meet a large mutated rat. it eats you and you die horribly")
-    sys.exit()
-  else:
-    print("you survived")
+    encounter()
 elif do == 'south':
-  print("ree")
-  print('YOU FAILED ')
-  sys.exit(1)
+  encounter()
 elif do == 'east':
-  print()  
+  encounter()
+  
