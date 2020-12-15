@@ -1,5 +1,6 @@
 from time import sleep
 from system import encounter
+from system import clear
 from os import system, name
 import sys
 from random import randint
