@@ -1,2 +1,2 @@
-from system import encounter
-encounter()
+from system import restart
+    

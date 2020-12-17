@@ -1,7 +1,6 @@
 from time import sleep
-from system import encounter
-from system import clear
-from os import system, name
+from encountersystem import clearscr
+from encountersystem import encounter
 import sys
 from random import randint
 goOn = True
@@ -21,25 +20,10 @@ cname = input('What is your player name going to be.  \b')
 print('I shall call you %s for now on' % cname)
 print('Let the story begin')
 sleep(0.9)
-
-#this will delete all previous text so it does not clutter the screen
-
-# for windows
-if name == 'nt':
-  _ = system('cls')
-
-# for mac and linux(here, os.name is 'posix')
-else:
-  _ = system('clear')
-
+clearscr()
 print('The story shall start in a dark labyrinth')
 print('I hope you like it there, %s' % cname)
-print('where do you want to go east, west, north, or south.')
-do = input()
-if do == 'north':
-    encounter()
-elif do == 'south':
-  encounter()
-elif do == 'east':
-  encounter()
+print('The only way to go is forward.')
+encounter()
+
   
