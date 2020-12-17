@@ -1,6 +1,7 @@
 import sys
-from random import randint, random
+from random import randint
 from os import system, name
+from time import sleep
 encouter = randint(0, 9)
 def clearscr(): 
   #this will delete all previous text so it does not clutter the screen
@@ -10,6 +11,10 @@ def clearscr():
   # for mac and linux(here, os.name is 'posix')
   else:
     _ = system('clear')
+def restart():
+        sleep(1)
+        clearscr()
+        encounter()
 def encounter():
   if encouter == 0 or encouter == 1 or encouter == 2 or encouter == 3:
     print("nothing happened")
@@ -27,9 +32,14 @@ def encounter():
         print("In the hole you encounter a large mutated rat. he eats you and you die in pain.")
         sys.exit()
       elif w == "dagger" or w == "d":
-        print()
+        print("You run into the bat stabbing it.")
+        print("You live!")
       elif w == "sword" or w == "s":
-        print()
+        print("as you wave the sword around you suddenly fall into a hole")
+        print("In the hole you encounter a large mutated rat. he eats you and you die in pain.")
+      else:
+        print("invalid input")
+        sys.exit()
     elif mo == 2 or mo == 3:
       print("2 or 3")
   elif encouter == 9:
