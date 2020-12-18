@@ -2,11 +2,9 @@ import sys
 from random import randint
 from os import system, name
 from time import sleep
-from restart import restartprog
-encouter = randint(0, 9)
+from esysmod import restartprog
 def lose():
-  print("you lose! Better luck next time")
-  
+  print("you lose! Better luck next time") 
 def clearscr(): 
   #this will delete all previous text so it does not clutter the screen
   # for windows
@@ -20,6 +18,7 @@ def encounter():
         clearscr()
         logic()
 def logic():
+  encouter = randint(0, 9)
   if encouter == 0 or encouter == 1 or encouter == 2 or encouter == 3:
     print("nothing happened")
   elif encouter == 4 or encouter == 5 or encouter == 6 or encouter == 7 or encouter == 8:
@@ -53,10 +52,11 @@ def logic():
       if w == "bow" or w == "b":
         print("The skeleton dodges the arrow! He stabs you ")
         print("In the hole you logic a large mutated rat. he eats you and you die in pain.")
+        print("you died")
         sys.exit()
       elif w == "dagger" or w == "d":
-        print("You run into the bat stabbing it.")
-        print("You live!")
+        print("You try and hit the skeleton but he hits you and he leaves you to bleed to death")
+        print("You died")
       elif w == "sword" or w == "s":
         print("as you wave the sword around you suddenly fall into a hole")
         print("In the hole you logic a large mutated rat. he eats you and you die in pain.")
