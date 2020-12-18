@@ -2,7 +2,11 @@ import sys
 from random import randint
 from os import system, name
 from time import sleep
+from restart import restartprog
 encouter = randint(0, 9)
+def lose():
+  print("you lose! Better luck next time")
+  
 def clearscr(): 
   #this will delete all previous text so it does not clutter the screen
   # for windows
@@ -12,7 +16,7 @@ def clearscr():
   else:
     _ = system('clear')
 def encounter():
-        sleep(1)
+        sleep(0.5)
         clearscr()
         logic()
 def logic():
@@ -30,7 +34,7 @@ def logic():
       if w == "bow" or w == "b":
         print("the arrow misses! the bat hits you and you fall into a hole.")
         print("In the hole you logic a large mutated rat. he eats you and you die in pain.")
-        sys.exit()
+        
       elif w == "dagger" or w == "d":
         print("You run into the bat stabbing it.")
         print("You live!")

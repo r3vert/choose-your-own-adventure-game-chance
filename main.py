@@ -1,7 +1,6 @@
 from time import sleep
 from encountersystem import clearscr
 from encountersystem import encounter
-import sys
 from random import randint
 goOn = True
 one = 1
