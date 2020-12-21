@@ -8,7 +8,6 @@ def starttext():
     print('Hi, %s.' % pname)
     # sleep command waits for a amount of seconds for it to print the next line of text
     sleep(0.9)
-
     print('I am a bot with self conscience, %s ' % pname)
     print('Im going to tell you a story')
     #get caracters name
