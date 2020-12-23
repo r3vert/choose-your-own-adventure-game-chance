@@ -2,7 +2,7 @@ import sys
 from random import randint
 from os import system, name
 from time import sleep
-from esysmod import restartprog
+from minorutil import restartprog
 def lose():
   print("you lose! Better luck next time")
   restartprog() 
@@ -34,7 +34,6 @@ def logic():
       if w == "bow" or w == "b":
         print("the arrow misses! the bat hits you and you fall into a hole.")
         print("In the hole you logic a large mutated rat. he eats you and you die in pain.")
-        
       elif w == "dagger" or w == "d":
         print("You run into the bat stabbing it.")
         print("You live!")
@@ -60,7 +59,7 @@ def logic():
         print("You died")
         lose()
       elif w == "sword" or w == "s":
-        print("as you wave the sword around you suddenly fall into a hole")
+        print("as you wave the sword around you hit the ribs of it and it bursts into ")
         print("In the hole you logic a large mutated rat. he eats you and you die in pain.")
       else:
         print("invalid input")

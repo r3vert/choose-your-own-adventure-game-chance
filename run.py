@@ -19,6 +19,7 @@ def starttext():
     print('The story shall start in a dark labyrinth')
     print('I hope you like it there, %s' % cname)
     print('The only way to go is forward.')
+starttext()
 encounter()    
 
   
