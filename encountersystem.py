@@ -1,4 +1,3 @@
-import sys
 from random import randint
 from os import system, name
 from time import sleep
