@@ -1,10 +1,10 @@
 from random import randint
 from os import system, name
 from time import sleep
-from minorutil import restartprog
+from minorutil import restart
 def lose():
   print("you lose! Better luck next time")
-  restartprog() 
+  restart.restartprog() 
 def clearscr(): 
   #this will delete all previous text so it does not clutter the screen
   # for windows
