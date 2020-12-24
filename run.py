@@ -1,7 +1,6 @@
 from time import sleep
 from encountersystem import clearscr
 from encountersystem import encounter
-from random import randint
 #get persons name
 def starttext():
     pname = input('What is your name?\n')
