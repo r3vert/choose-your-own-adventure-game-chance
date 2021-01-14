@@ -19,9 +19,9 @@ def encounter():
         logic()
 def logic():
   encouter = randint(0, 9)
-  if encouter == 0 or encouter == 1 or encouter == 2 or encouter == 3:
+  if encounter > 0 and encounter < 4:
     print("nothing happened")
-  elif encouter == 4 or encouter == 5 or encouter == 6 or encouter == 7 or encouter == 8:
+  elif encounter > 3 and encounter < 9:
     print("you encountered a monster")
     mo = randint(1, 3)
     if mo == 1:
@@ -59,7 +59,7 @@ def logic():
         lose()
       elif w == "sword" or w == "s":
         print("as you wave the sword around you hit the ribs of it and it bursts into ")
-        print("In the hole you logic a large mutated rat. he eats you and you die in pain.")
+        print("you win!")
       else:
         print("invalid input")
         encounter()
@@ -67,7 +67,11 @@ def logic():
       print("3")
   elif encouter == 9:
     print("You escaped")
-logic()
+  else:
+    print("Nice going! You found a bug. please report this")
+if __name__ == "__main__":
+   #Do something here
+   encounter()
 
 
 
